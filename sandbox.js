@@ -1,11 +1,14 @@
-console.log(true, false)
+const grade = 'D'
 
-let email = `luigi@thenetninja.co.uk`
-let names = ['mario', 'peach', 'toad']
-let result = email.includes('@')
-
-let age = 25
-
-let name = 'shaun'
-
-console.log(age !== 30)
+switch (grade) {
+  case 'A':
+    console.log('you got an A')
+  case 'B':
+    console.log('you go C')
+  case 'C':
+    console.log('you got C')
+  case 'D':
+    console.log('you got D')
+  default:
+    console.log('not a valid grade')
+}
