@@ -1,14 +1,24 @@
-const grade = 'D'
+// // let speak = (name = 'tim') => {
+// //   return `hello ${name}`
+// // }
 
-switch (grade) {
-  case 'A':
-    console.log('you got an A')
-  case 'B':
-    console.log('you go C')
-  case 'C':
-    console.log('you got C')
-  case 'D':
-    console.log('you got D')
-  default:
-    console.log('not a valid grade')
-}
+// // console.log(speak())
+// const myFunc = (callbackFunc) => {
+//   let value = 50
+//   callbackFunc(value)
+// }
+
+// myFunc( value => {
+//     // do something
+//   console.log(value)
+// })
+
+const ul = document.querySelector('.people')
+const people = ['mario', 'luigi', 'toad', 'wario']
+let html = ``
+people.forEach((person) => {
+  html += `<li style="color: purple">${person}</li>`
+})
+
+console.log(html)
+ul.innerHTML = html
