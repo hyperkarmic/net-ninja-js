@@ -1,24 +1,17 @@
-// // let speak = (name = 'tim') => {
-// //   return `hello ${name}`
-// // }
+// let scoreOne = 50
+// let scoreTwo = scoreOne
 
-// // console.log(speak())
-// const myFunc = (callbackFunc) => {
-//   let value = 50
-//   callbackFunc(value)
-// }
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`)
 
-// myFunc( value => {
-//     // do something
-//   console.log(value)
-// })
+// scoreOne = 100
 
-const ul = document.querySelector('.people')
-const people = ['mario', 'luigi', 'toad', 'wario']
-let html = ``
-people.forEach((person) => {
-  html += `<li style="color: purple">${person}</li>`
-})
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`)
 
-console.log(html)
-ul.innerHTML = html
+const userOne = { name: 'ryu', age: 30 }
+const userTwo = userOne
+
+console.log(userOne, userTwo)
+
+userOne.age = 666
+
+console.log(userOne, userTwo)
